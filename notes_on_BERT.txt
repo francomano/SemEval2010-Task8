@@ -1,0 +1,16 @@
+GPT è progettato per compiti generativi, dove l'obiettivo è prevedere la prossima parola in una sequenza, in modo autoregressivo. 
+In questo contesto, la predizione deve avvenire sequentemente (cioè, una parola alla volta, in ordine cronologico). 
+La bidirezionalità non è necessaria per questo tipo di generazione, perché GPT deve fare previsioni considerando solo il passato, non il futuro.
+
+In altre parole, la direzionalità di GPT è dettata dal fatto che deve generare parole in un ordine naturale, 
+come in una conversazione o un testo scritto, dove ogni parola viene generata in base a ciò che è stato scritto prima di essa, 
+ma non può guardare avanti (al futuro) per predire la parola successiva.
+
+Riepilogo:
+
+    - GPT è unidirezionale (da sinistra a destra), cioè elabora e predice il testo considerando solo le parole precedenti.
+
+    - BERT è bidirezionale, cioè elabora e predice il testo considerando sia il contesto a sinistra che a destra di ogni parola, grazie al meccanismo di mascheramento (Masked Language Modeling).
+
+Questa differenza rende BERT particolarmente potente per compiti di comprensione del linguaggio (come la classificazione del testo o la risposta a domande), 
+mentre GPT è più adatto per generare testo o rispondere in modo sequenziale.
